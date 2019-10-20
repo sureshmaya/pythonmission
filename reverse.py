@@ -14,15 +14,20 @@ Source:
 '''
 
 # Import necessary modules
- 
+
+def divide_name (name):
+    return name.split(" ")
+
 def reverse_string(name):
     return name[::-1]
 
 def startpy():
-    name = "RUTHVIKA"
-    reverse_name = reverse_string(name)
-
-    print(reverse_name)
+    name = "Raja CSP Raman"
+    
+    dividedname = divide_name(name)
+    print("first name: " + dividedname[0])
+    print("Middle name: " + dividedname[1])
+    print("Last name: " + dividedname[2])
 
 if __name__ == '__main__':
     startpy()
